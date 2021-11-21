@@ -99,9 +99,9 @@ class VanillaTilt {
       window.addEventListener("resize", this.onWindowResizeBind);
     }
 
-    if (this.gyroscope) {
-      window.addEventListener("deviceorientation", this.onDeviceOrientationBind);
-    }
+    // if (this.gyroscope) {
+    //   window.addEventListener("deviceorientation", this.onDeviceOrientationBind);
+    // }
   }
 
   /**
@@ -112,9 +112,9 @@ class VanillaTilt {
     this.elementListener.removeEventListener("mouseleave", this.onMouseLeaveBind);
     this.elementListener.removeEventListener("mousemove", this.onMouseMoveBind);
 
-    if (this.gyroscope) {
-      window.removeEventListener("deviceorientation", this.onDeviceOrientationBind);
-    }
+    // if (this.gyroscope) {
+    //   window.removeEventListener("deviceorientation", this.onDeviceOrientationBind);
+    // }
 
     if (this.glare || this.fullPageListening) {
       window.removeEventListener("resize", this.onWindowResizeBind);
